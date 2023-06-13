@@ -24,8 +24,6 @@
 // console.log(pizzaPalace.order("Big Mike"));
 // console.log(pizzaPalace.order("Viennese"));
 
-
-
 // ================Завдання 2========================================
 // const customer = {
 //   username: "Mango",
@@ -59,10 +57,6 @@
 // console.log(customer.getBalance()); // 19750
 // console.log(customer.getOrders()); // ["Burger", "Pizza", "Salad", "Steak"]
 
-
-
-
-
 // ================Завдання 3========================================
 // const historyService = {
 //   orders: [
@@ -91,8 +85,6 @@
 // console.log(historyService.getOrdersLog());
 // console.log(historyService.getEmails());
 // console.log(historyService.getOrdersByEmail("solomon@topmail.net"));
-
-
 
 // ================Завдання 7========================================
 // =================КОНСТРУКТОР КЛАСУ===============
@@ -152,8 +144,6 @@
 // storage.removeItem("Prolonger");
 // console.log(storage.getItems()); // ["Nanitoids", "Antigravitator", "Droid"]
 
-
-
 // ================Завдання 11========================================
 // class StringBuilder {
 //   constructor(initialValue) {
@@ -166,10 +156,10 @@
 //     return this.value = `${this.value}${str}`;
 //   }
 //   padStart(str) {
-//    return this.value = `${str}${this.value}`; 
+//    return this.value = `${str}${this.value}`;
 //   }
 //    padBoth(str) {
-//     return this.value = `${str}${this.value}${str}`; 
+//     return this.value = `${str}${this.value}${str}`;
 //   }
 // }
 // // Change code above this line
@@ -181,8 +171,6 @@
 // console.log(builder.getValue()); // "^.^"
 // builder.padBoth("=");
 // console.log(builder.getValue()); // "=^.^="
-
-
 
 // // ================Завдання 12  Приватні властивості========================================
 // // class Car {
@@ -202,7 +190,6 @@
 
 // //   // Change code above this line
 // // }
-
 
 // // ================Завдання 13  Приватні властивості========================================
 // // class Storage {
@@ -232,7 +219,6 @@
 // // console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator", "Droid"]
 // // storage.removeItem("Prolonger");
 // // console.log(storage.getItems()); // ["Нанитоиды", "Антигравитатор", "Droid"]
-
 
 // // ================Завдання 13  Геттери та сеттери=======================================
 // class Car {
@@ -273,11 +259,10 @@
 //   // Change code above this line
 // }
 
-
 // ================Завдання 17 =======================================
 // class Car {
 //   static #MAX_PRICE = 50000;
-  
+
 //   // Change code below this line
 //   static checkPrice(price) {
 //    console.log(this.#MAX_PRICE);
@@ -297,8 +282,6 @@
 
 // console.log(Car.checkPrice(audi.price)); // "Success! Price is within acceptable limits"
 // console.log(Car.checkPrice(bmw.price)); // "Error! Price exceeds the maximum"
-
-
 
 // ================Завдання 19  =======================================
 // class User {
@@ -340,62 +323,57 @@
 // console.log(mango.email); // "mango@mail.com"
 // console.log(mango.accessLevel); // "superuser"
 
-
-
-
 // ================Завдання 20  =======================================
-class User {
-  email;
+// class User {
+//   email;
 
-  constructor(email) {
-    this.email = email;
-  }
+//   constructor(email) {
+//     this.email = email;
+//   }
 
-  get email() {
-    return this.email;
-  }
+//   get email() {
+//     return this.email;
+//   }
 
-  set email(newEmail) {
-    this.email = newEmail;
-  }
-}
-class Admin extends User {
-  // Change code below this line
+//   set email(newEmail) {
+//     this.email = newEmail;
+//   }
+// }
+// class Admin extends User {
+//   // Change code below this line
 
-   static AccessLevel = {
-    BASIC: "basic",
-    SUPERUSER: "superuser",
-  };
+//    static AccessLevel = {
+//     BASIC: "basic",
+//     SUPERUSER: "superuser",
+//   };
 
-  constructor({ email, accessLevel}) {
-    super(email);
-    this.accessLevel = accessLevel;
-    this.blacklistedEmails = [] ;
-  }
+//   constructor({ email, accessLevel}) {
+//     super(email);
+//     this.accessLevel = accessLevel;
+//     this.blacklistedEmails = [] ;
+//   }
 
-  blacklist(email) {
-    this.blacklistedEmails.push(email);
-  }
-  
-  isBlacklisted(email) {
-    return this.blacklistedEmails.includes(email);
-  }
-  // Change code above this line
-}
+//   blacklist(email) {
+//     this.blacklistedEmails.push(email);
+//   }
 
-const mango = new Admin({
-  email: "mango@mail.com",
-  accessLevel: Admin.AccessLevel.SUPERUSER,
-});
+//   isBlacklisted(email) {
+//     return this.blacklistedEmails.includes(email);
+//   }
+//   // Change code above this line
+// }
 
-console.log(mango.email); // "mango@mail.com"
-console.log(mango.accessLevel); // "superuser"
+// const mango = new Admin({
+//   email: "mango@mail.com",
+//   accessLevel: Admin.AccessLevel.SUPERUSER,
+// });
 
-mango.blacklist("poly@mail.com");
-console.log(mango.blacklistedEmails); // ["poly@mail.com"]
-console.log(mango.isBlacklisted("mango@mail.com")); // false
-console.log(mango.isBlacklisted("poly@mail.com")); // true
+// console.log(mango.email); // "mango@mail.com"
+// console.log(mango.accessLevel); // "superuser"
 
-console.log(mango.isBlacklisted("poly@mail.com")); // true
+// mango.blacklist("poly@mail.com");
+// console.log(mango.blacklistedEmails); // ["poly@mail.com"]
+// console.log(mango.isBlacklisted("mango@mail.com")); // false
+// console.log(mango.isBlacklisted("poly@mail.com")); // true
 
-
+// console.log(mango.isBlacklisted("poly@mail.com")); // true

@@ -28,12 +28,10 @@
 // for (const key in apartment) {
 //   keys.push(key)
 //    values.push(apartment[key])
-  
+
 // }
 // console.log(keys);
 // console.log(values);
- 
-
 
 // ============завдання 13========================
 /**
@@ -81,7 +79,6 @@
 // console.log(keys);
 // console.log(values);
 
-
 // ============завдання 16========================
 // /**
 //  * Find total salary all employees
@@ -102,8 +99,6 @@
 // console.log(countTotalSalary({mango: 100, poly: 150, alfred: 80 }));
 // console.log(countTotalSalary({ kiwi: 200, poly: 50, ajax: 150 }));
 
-
-
 // ============завдання 17========================
 // const colors = [
 //   { hex: "#f44336", rgb: "244,67,54" },
@@ -121,8 +116,6 @@
 // }
 // console.log( hexColors);
 // console.log(rgbColors);
-
-
 
 // ============завдання 18========================
 // const products = [
@@ -146,8 +139,6 @@
 // console.log(getProductPrice("Scanner"));
 // console.log(getProductPrice("Droid"));
 // console.log(getProductPrice("Engine"));
-
-
 
 // ============завдання 19========================
 
@@ -178,9 +169,6 @@
 // console.log(getAllPropValues("price"));
 // console.log(getAllPropValues("category"));
 
-
-
-
 // ============завдання 20========================
 
 // const products = [
@@ -206,8 +194,6 @@
 // console.log(calculateTotalPrice("Grip"));
 // console.log(calculateTotalPrice("Scanner"));
 
-
-
 // ============завдання 23========================
 // const highTemperatures = {
 //   yesterday: 28,
@@ -225,7 +211,6 @@
 // // Change code above this line
 // const meanTemperature = (highYesterday + highToday + highTomorrow) / 3;
 // console.log(meanTemperature);
-
 
 // ============завдання 25========================
 
@@ -250,13 +235,11 @@
 //         icon: tomorrowIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg" }
 // } = forecast;
 
-
-
 // ============завдання 26========================
 
 // // Change code below this line
 // function calculateMeanTemperature(forecast) {
-  
+
 // const {
 //     today: { low: todayLow,
 //         high: todayHigh},
@@ -269,7 +252,6 @@
 // console.log (calculateMeanTemperature({ today: {low: 28, high: 32}, tomorrow: {low: 25, high: 29} }));
 // console.log (calculateMeanTemperature({ today: {low: 37, high: 40}, tomorrow: {low: 33, high: 38} }));
 
-
 // ============завдання 27========================
 // const scores = [89, 64, 42, 17, 93, 51, 26];
 // // Change code below this line
@@ -277,9 +259,6 @@
 // const worstScore = Math.min(...scores);
 // console.log(bestScore);
 // console.log(worstScore);
-
-
-
 
 // ============завдання 28========================
 // const firstGroupScores = [64, 42, 93];
@@ -289,8 +268,6 @@
 // const allScores = [...firstGroupScores, ...secondGroupScores, ...thirdGroupScores];
 // const bestScore = Math.max(...allScores);
 // const worstScore = Math.min(...allScores);
-
-
 
 // ============завдання 29========================
 
@@ -310,8 +287,6 @@
 // const finalSettings = {...defaultSettings, ...overrideSettings};
 // console.log(finalSettings)
 
-
-
 // ============завдання 31========================
 // // Change code below this line
 // function add(...args) {
@@ -321,14 +296,13 @@
 //         total += args[i];
 //     }
 //     return total;
-  
+
 //   // Change code above this line
 // }
 // console.log(add(15, 27));
 // console.log(add(12, 4, 11, 48));
 // console.log(add(32, 6, 13, 19, ));
 // console.log(add(74, 11, 62, 46, 12, 36));
-
 
 // ============завдання 32========================
 // // Change code below this line
@@ -348,9 +322,6 @@
 // console.log(addOverNum(15, 32, 6, 13, 19, 8));
 // console.log(addOverNum(20, 74, 11, 62, 46, 12, 36));
 
-
-
-
 // ============завдання 33========================
 // // Change code below this line
 // function findMatches(copies,...args) {
@@ -361,7 +332,7 @@
 //          matches.push(iterator);
 //         }
 //     }
-    
+
 //   // Change code above this line
 //   return matches;
 // };
@@ -369,8 +340,6 @@
 // console.log(findMatches([4, 89, 17, 36, 2], 8, 17, 89, 27, 2));
 // console.log(findMatches([10, 24, 41, 6, 9, 19], 24, 11, 9, 23, 41));
 // console.log(findMatches([63, 11, 8, 29], 4, 7, 16));
-
-
 
 // ============завдання 34========================
 // const bookShelf = {
@@ -394,8 +363,6 @@
 // console.log(bookShelf.removeBook("Red sunset"));
 // console.log(bookShelf.updateBook("Sands of dune", "Dune"));
 
-
-
 // ============завдання 35========================
 // const bookShelf = {
 //   books: ["The last kingdom", "Haze", "The guardian of dreams"],
@@ -410,9 +377,6 @@
 // };
 // console.log(bookShelf.updateBook("Haze", "Dungeon chronicles"));
 // console.log(bookShelf.updateBook("The last kingdom", "Dune"));
-
-
-
 
 // ============завдання 41========================
 // const atTheOldToad = {
@@ -431,7 +395,7 @@
 //         let oldPotion;
 //         for (const potion of this.potions) {
 //             if (potion.name === newName) {
-//                 oldPotion = potion; 
+//                 oldPotion = potion;
 //             }
 //         }
 //              if (this.potions.includes(oldPotion)) {
@@ -455,18 +419,18 @@
 
 //         this.potions.splice(removePotionIndex, 1);
 //         return this.potions
-//     },   
+//     },
 //      updatePotionName(oldName, newName) {
 //     let removePotion;
 //         let removePotionIndex = -1;
 //          for (const potion of this.potions) {
 //              if (potion.name === oldName) {
-//                  potion.name = newName;            
+//                  potion.name = newName;
 //             }
 //          };
-//          return this.potions    
+//          return this.potions
 //   },
-   
+
 // };
 
 // console.log(atTheOldToad.getPotions());
@@ -478,3 +442,83 @@
 // console.log(atTheOldToad.removePotion("Speed potion"));
 // console.log(atTheOldToad.updatePotionName("Dragon breath", "Polymorth"));
 // console.log(atTheOldToad.updatePotionName("Stone skin", "Invulnerability potion"));
+
+// Створити функцію яка приймає 1 параметр масив продуктів і повертає мутований масив
+// Потрібно перебрати масив і якщо він має об'єкти в яких дублюються айді то квонтіті цих елементів потрібно сплюсувати
+// а ті обє'кти в яких айді співпадають видалити з масиву.
+// (Потрібно мутувати масив, створювати новий не потрібно)
+
+// const products = [
+//   {
+//     id: "sku1",
+//     qty: 1,
+//   },
+//   {
+//     id: "sku2",
+//     qty: 2,
+//   },
+//   {
+//     id: "sku3",
+//     qty: 3,
+//   },
+//   {
+//     id: "sku1",
+//     qty: 6,
+//   },
+//   {
+//     id: "sku1",
+//     qty: 8,
+//   },
+//   {
+//     id: "sku2",
+//     qty: 19,
+//   },
+//   {
+//     id: "sku4",
+//     qty: 1,
+//   },
+// ];
+
+// function optimizeProduct(arr) {
+//   for (let i = 0; i < arr.length; i += 1) {
+//     for (let j = i + 1; j < arr.length; j += 1) {
+//       if (arr[i].id === arr[j].id) {
+//         arr[i].qty += arr[j].qty;
+//         arr.splice(j, 1);
+//         j -= 1;
+//       }
+//     }
+//   }
+// }
+// optimizeProduct(products);
+
+// console.log(products);
+
+// //Створити функцію яка буде рахувати за скільки днів равлик зможе виповзти з колодязя, функція приймає 1 параметр.
+// //1 глибина колодязя (depth)
+
+// //Функція повертає кількість днів
+
+// // Умови:
+// // вдень Равлик проповзає на 7 м вгору, а за ніч опускається на 2 м вниз
+// // використовувати цикл while()
+
+// function calcDays(depth) {
+//   const daySpead = 7;
+//   const nightSpead = 2;
+//   let days = 0;
+//   let total = 0;
+//   while (total < depth) {
+//     total += daySpead;
+//     days += 1;
+//     if (total < depth) {
+//       total -= nightSpead;
+//     }
+//   }
+
+//   return `виповзе за ${days} днів`;
+// }
+
+// console.log(calcDays(42)); //виповзе за 8 днів
+// console.log(calcDays(17)); //виповзе за 3 дні
+// console.log(calcDays(18)); //виповзе за 4 дні

@@ -21,4 +21,24 @@
 // ========Приклад використання NaN====
 const produktPrice1 = 100;
 const produktPrice2 = undefined;
-    console.log(produktPrice1 * 2 + (Number.isNaN(produktPrice2) * 3))
+console.log(produktPrice1 * 2 + Number.isNaN(produktPrice2) * 3);
+
+// console.log(Boolean(null))
+// console.log(Boolean(false))
+// console.log(Boolean(0))
+// console.log(Boolean(NaN))
+// console.log(Boolean(undefined))
+// console.log(Boolean(""))
+
+// const price = 100;
+// let total = 90;
+// total += price;
+// console.log(total);
+// total -= 10;
+// console.log(total);
+// total *= 2;
+// console.log(total);
+// total **= 2; //степінь
+// console.log(total);
+// total /= 10000;
+console.log(total);
